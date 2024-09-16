@@ -7,3 +7,12 @@ body{
 nav{
     background-color: #3C3D37;
 }
+.card{
+    background-color: transparent;
+    color: #ECDFCC;
+    border: 2px solid #697565;
+    border-top: 0px;
+    border-radius: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
