@@ -16,6 +16,26 @@ nav{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.container{
-    margin-bottom: 7%;
+.container:not(:nth-child(2)){
+    margin-top: 10%;
 }
+.carousel-item > img{
+    border-radius: 10px;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+    background-color: red;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
