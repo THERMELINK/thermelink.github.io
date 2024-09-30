@@ -1,0 +1,71 @@
+body{
+    background-color: #1E201E;
+    color: #ECDFCC;
+    font-family:"Pixelify Sans", sans-serif;
+    text-align: center;
+}
+nav{
+    background-color: #3C3D37;
+}
+.card{
+    background-color: transparent;
+    color: #ECDFCC;
+    border: 2px solid #697565;
+    border-top: 0px;
+    border-radius: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+  .hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .hero-image img{
+    width: 100%;
+    height: 300px;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa {
+    opacity: 0.8;
+    padding: 15px;
+    width: 60px;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 15%;
+}
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-envelope{
+    background: #3C3D37;
+    color: white;
+}
+.fa-phone {
+    background: #3C3D37;
+    color: white;
+}
+.fa-github {
+    background: #1f2328;
+    color: white;
+}
+.fa:hover{
+    opacity: 0.99;
+}
