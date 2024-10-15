@@ -16,6 +16,10 @@ nav{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.card-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 .container:not(:nth-child(2)){
     margin-top: 5%;
 }
@@ -23,6 +27,13 @@ nav{
     border-radius: 10px;
 }
 
+.titeltext {
+    font-size: 55px;
+  }
+span.method {
+    display: inline; 
+    color: rgb(210, 210, 3);
+}
 .hero-text {
     text-align: center;
     position: absolute;
@@ -30,6 +41,9 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
+  }
+  .hero-text > p{
+    font-size: 60px;
   }
   .hero-image {
     background-position: center;
@@ -39,6 +53,12 @@ nav{
   .hero-image img{
     width: 100%;
     height: 300px;
+
+
+
+
+
+
   }
   .fa {
     padding: 10px;
