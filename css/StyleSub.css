@@ -17,6 +17,18 @@ nav{
     border-top-right-radius: 5px;
 }
 
+.titeltext {
+  font-size: 55px;
+}
+span.method {
+  display: inline; 
+  color: rgb(210, 210, 3);
+}
+
+.card-text{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 .hero-text {
     text-align: center;
     position: absolute;
