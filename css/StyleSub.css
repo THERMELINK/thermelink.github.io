@@ -42,7 +42,10 @@ span.method {
     background-repeat: no-repeat;
     position: relative;
   }
-  .hero-image img{
+  .hero-image .heroImage{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.201), rgba(30, 32, 30, 0.999)), url(../WebsiteImages/unityDefault.png);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 300px;
   }
