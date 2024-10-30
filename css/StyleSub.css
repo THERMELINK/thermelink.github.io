@@ -16,7 +16,10 @@ nav{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-
+.container {
+  background: linear-gradient(to bottom right, rgba(30, 32, 30, 0.30) 60%, rgba(236, 223, 204, 0.20));
+  border-radius: 20px;
+}
 .titeltext {
   font-size: 55px;
 }
@@ -42,8 +45,8 @@ span.method {
     background-repeat: no-repeat;
     position: relative;
   }
-  .hero-image .heroImage{
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.201), rgba(30, 32, 30, 0.999)), url(../WebsiteImages/unityDefault.png);
+  .hero-image .heroImage {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.201), rgba(30, 32, 30, 0.999)), url(../WebsiteImages/ScriptScreenshotStretched.png);
     background-position: center;
     background-size: cover;
     width: 100%;
