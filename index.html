@@ -3,6 +3,8 @@
 
 <HEAD>
   <TITLE>Portfolio thom</TITLE>
+  <!--script wacht totdat de html file is geladen door defer-->
+  <script src="../thermelink.github.io/scripts/bruteforce.js" defer></script>
 
   <!--linkt bootstrap en stylesheet-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -49,172 +51,179 @@
     <div class="heroImage"></div>
     <div class="hero-text">
       <div class="titeltext">
-        <p>Portfolio Thom Hermelink</p>
+        <p id="animated">Portfolio Thom Hermelink</p>
       </div>
       <a href="#" class="fa fa-linkedin"></a>
-        <a href="https://github.com/THERMELINK" class="fa fa-github"></a>
-        <a href="mailto:thermelink01@student.rocvantwente.nl" class="fa fa-envelope"></a>
+      <a href="https://github.com/THERMELINK" class="fa fa-github"></a>
+      <a href="mailto:thermelink01@student.rocvantwente.nl" class="fa fa-envelope"></a>
     </div>
   </div>
 
-    <div wieBenIk>
-      <div class="container mt-5 py-3">
-        <div class="titeltext">
-          <p>Over<span class="method">.Mij( )</span></p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-5">
-            <!--carousel begin-->
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel"
-              data-bs-pause="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                  <img src="WebsiteImages/MeneerHermelink.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                  <img src="WebsiteImages/TomCruise.jpg" class="card-img-top" alt="...">
-                </div>
+  <div wieBenIk>
+    <div class="container mt-5 py-3">
+      <div class="titeltext">
+        <p>Over<span class="method">.Mij( )</span></p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-5">
+          <!--carousel begin-->
+          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel"
+            data-bs-pause="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="WebsiteImages/MeneerHermelink.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="WebsiteImages/TomCruise.jpg" class="card-img-top" alt="...">
               </div>
             </div>
-            <!--carousel eind-->
-            <p class="card-text">Hoi! ik ben <span class="method">Thom Hermelink</span> en ik studeer software development bij het ROC van twente.
-            ik houd mij vooral bezig met Unity en C# maar ik kan ook werken met talen zoals HTML, CSS, Lua en Javascript!</p>
-            <p class="card-text">nog benieuwd naar mij? klik hier verder!</p>
-            <a href="WebsitePages/Overmij.html" class="btn btn-outline-primary">Over mij</a>
           </div>
+          <!--carousel eind-->
+          <p class="card-text">Hoi! ik ben <span class="method">Thom Hermelink</span> en ik studeer software development
+            bij het ROC van twente.
+            ik houd mij vooral bezig met Unity en C# maar ik kan ook werken met talen zoals HTML, CSS, Lua en
+            Javascript!</p>
+          <p class="card-text">nog benieuwd naar mij? klik hier verder!</p>
+          <a href="WebsitePages/Overmij.html" class="btn btn-outline-primary">Over mij</a>
         </div>
       </div>
     </div>
-    <!--eventueel foto toevoegen-->
+  </div>
+  <!--eventueel foto toevoegen-->
   </div>
   </div>
 
-    <div Ervaring>
-      <div class="container mt-5 py-3">
-        <div class="titeltext">
-          <p>hermelink<span class="method">.Ervaring( )</span></p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-8">
-            <img src="WebsiteImages/UnityScreenshot.png" class="card-img-top" alt="...">
-            <p class="card-text">Ik ben bekend met verschillende programmeertalen en software, waaronder C#, Unity, HTML, CSS en meer!</p>
-            <p class="card-text">Benieuwd? Kijk snel op deze pagina!</p>
-            <a href="WebsitePages/Ervaring.html" class="btn btn-outline-primary">Ervaring</a>
-          </div>
-        </div>
+  <div Ervaring>
+    <div class="container mt-5 py-3">
+      <div class="titeltext">
+        <p>hermelink<span class="method">.Ervaring( )</span></p>
       </div>
-    </div>
-
-    <div projecten>
-      <!--kopje voor projecten-->
-      <div class="container mt-5 py-3">
-        <div class="titeltext">
-          <p>hermelink<span class="method">.Projecten( )</span></p>
+      <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <img src="WebsiteImages/UnityScreenshot.png" class="card-img-top" alt="...">
+          <p class="card-text">Ik ben bekend met verschillende programmeertalen en software, waaronder C#, Unity, HTML,
+            CSS en meer!</p>
+          <p class="card-text">Benieuwd? Kijk snel op deze pagina!</p>
+          <a href="WebsitePages/Ervaring.html" class="btn btn-outline-primary">Ervaring</a>
         </div>
-        <div class="row justify-content-center">
-
-
-           <div class="col-sm-3">
-            <div class="card h-100">
-              <img class="card-img-top" src="WebsiteImages/GameIcons/TextadventureIcon.jpg" alt="Card image cap">
-              <div class="card-footer mt-auto">
-                <h5 class="card-title">project text adventure</h5>
-                <p class="card-text">Tijdens dit project maakten we een kleine text-adventure game die je kan spelen via de console</p>
-              </div>
-              <div class="mb-4">
-                <a href="WebsitePages/Textadventure.html" class="btn btn-outline-primary">naar project</a>
-              </div>
-               <p class="card-text text-muted">12-2023</p>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="card h-100">
-              <img class="card-img-top" src="WebsiteImages/GameIcons/ArcadegameIcon.png" alt="Card image cap">
-              <div class="card-footer mt-auto">
-                <h5 class="card-title">Project Arcade game</h5>
-                <p class="card-text">Tijdens dit project hebben we in groepjes gewerkt aan een simpele arcade game met als limitatie dat we het spel zwart/wit moesten maken!</p>
-              </div>
-              <div class="mb-4">
-                <a href="WebsitePages/ArcadeGame.html" class="btn btn-outline-primary">naar project</a>
-              </div>
-               <p class="card-text text-muted">6-2024</p>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="card h-100">
-              <img class="card-img-top" src="WebsiteImages/GameIcons/MicrogameIcon.png" alt="Card image cap">
-              <div class="card-footer mt-auto">
-                <h5 class="card-title">project Microgame</h5>
-                <p class="card-text">Tijdens dit project hebben we in groepjes gewerkt aan een Portfolio waardige
-                  Microgame</p>
-              </div>
-              <div class="mb-4">
-                <a href="WebsitePages/Microgame.html" class="btn btn-outline-primary">naar project</a>
-              </div>
-               <p class="card-text text-muted">9-2024</p>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="card h-100">
-              <img class="card-img-top" src="WebsiteImages/crashNdashGameVertical.png" alt="Card image cap">
-              <div class="card-footer mt-auto">
-                <h5 class="card-title">project Crash N Dash</h5>
-                <p class="card-text">Met dit prive-project hebben wij een party/race game gemaakt met behulp van Unity 2D</p>
-              </div>
-              <div class="mb-4">
-                <a href="WebsitePages/CrashNDash.html" class="btn btn-outline-primary">naar project</a>
-              </div>
-              <p class="card-text text-muted">3-2025</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row justify-content-center mt-3">
-
-
-           <div class="col-sm-3">
-            <div class="card h-100">
-              <img class="card-img-top" src="WebsiteImages/GameIcons/AirpodshottyIcon.png" alt="Card image cap">
-              <div class="card-footer mt-auto">
-                <h5 class="card-title">project text adventure</h5>
-                <p class="card-text">Tijdens dit project maakten we een kleine text-adventure game die je kan spelen via de console</p>
-              </div>
-              <div class="mb-4">
-                <a href="WebsitePages/AirpodShotty.html" class="btn btn-outline-primary">naar project</a>
-              </div>
-               <p class="card-text text-muted">12-2023</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
 
-<div projecten>
-    
-  <div class="footer">
-    <div class="d-flex justify-content-evenly border-top py-3 my-3">
-      <div class="1">
-        <div class="d-inline p-2 text-white">E-mail</div>
-        <a href="mailto:thermelink01@student.rocvantwente.nl" class="fa fa-envelope"></a>
+  <div projecten>
+    <!--kopje voor projecten-->
+    <div class="container mt-5 py-3">
+      <div class="titeltext">
+        <p>hermelink<span class="method">.Projecten( )</span></p>
       </div>
-  
-      <div class="2">
-        <div class="d-inline p-2 text-white">Linkedin</div>
-        <a href="#" class="fa fa-linkedin"></a>
+      <div class="row justify-content-center">
+
+
+        <div class="col-sm-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="WebsiteImages/GameIcons/TextadventureIcon.jpg" alt="Card image cap">
+            <div class="card-footer mt-auto">
+              <h5 class="card-title">project text adventure</h5>
+              <p class="card-text">Tijdens dit project maakten we een kleine text-adventure game die je kan spelen via
+                de console</p>
+            </div>
+            <div class="mb-4">
+              <a href="WebsitePages/Textadventure.html" class="btn btn-outline-primary">naar project</a>
+            </div>
+            <p class="card-text text-muted">12-2023</p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="WebsiteImages/GameIcons/ArcadegameIcon.png" alt="Card image cap">
+            <div class="card-footer mt-auto">
+              <h5 class="card-title">Project Arcade game</h5>
+              <p class="card-text">Tijdens dit project hebben we in groepjes gewerkt aan een simpele arcade game met als
+                limitatie dat we het spel zwart/wit moesten maken!</p>
+            </div>
+            <div class="mb-4">
+              <a href="WebsitePages/ArcadeGame.html" class="btn btn-outline-primary">naar project</a>
+            </div>
+            <p class="card-text text-muted">6-2024</p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="WebsiteImages/GameIcons/MicrogameIcon.png" alt="Card image cap">
+            <div class="card-footer mt-auto">
+              <h5 class="card-title">project Microgame</h5>
+              <p class="card-text">Tijdens dit project hebben we in groepjes gewerkt aan een Portfolio waardige
+                Microgame</p>
+            </div>
+            <div class="mb-4">
+              <a href="WebsitePages/Microgame.html" class="btn btn-outline-primary">naar project</a>
+            </div>
+            <p class="card-text text-muted">9-2024</p>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="WebsiteImages/crashNdashGameVertical.png" alt="Card image cap">
+            <div class="card-footer mt-auto">
+              <h5 class="card-title">project Crash N Dash</h5>
+              <p class="card-text">Met dit prive-project hebben wij een party/race game gemaakt met behulp van Unity 2D
+              </p>
+            </div>
+            <div class="mb-4">
+              <a href="WebsitePages/CrashNDash.html" class="btn btn-outline-primary">naar project</a>
+            </div>
+            <p class="card-text text-muted">3-2025</p>
+          </div>
+        </div>
+
       </div>
-  
-      <div cla="3">
-        <div class="d-inline p-2 text-white">Github</div>
-        <a href="https://github.com/THERMELINK" class="fa fa-github"></a>
+
+      <div class="row justify-content-center mt-3">
+
+
+        <div class="col-sm-3">
+          <div class="card h-100">
+            <img class="card-img-top" src="WebsiteImages/GameIcons/AirpodshottyIcon.png" alt="Card image cap">
+            <div class="card-footer mt-auto">
+              <h5 class="card-title">mini project Airpod-shotty</h5>
+              <p class="card-text">Tijdens dit miniproject hadden wij met behulp van mono-game een minigame gemaakt</p>
+            </div>
+            <div class="mb-4">
+              <a href="WebsitePages/AirpodShotty.html" class="btn btn-outline-primary">naar project</a>
+            </div>
+            <p class="card-text text-muted">12-2023</p>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </div>
+  </div>
+
+  <div projecten>
+
+    <div class="footer">
+      <div class="d-flex justify-content-evenly border-top py-3 my-3">
+        <div class="1">
+          <div class="d-inline p-2 text-white">E-mail</div>
+          <a href="mailto:thermelink01@student.rocvantwente.nl" class="fa fa-envelope"></a>
+        </div>
+
+        <div class="2">
+          <div class="d-inline p-2 text-white">Linkedin</div>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+
+        <div cla="3">
+          <div class="d-inline p-2 text-white">Github</div>
+          <a href="https://github.com/THERMELINK" class="fa fa-github"></a>
+        </div>
+      </div>
+    </div>
 </BODY>
 
 </HTML>
