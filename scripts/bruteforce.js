@@ -43,7 +43,7 @@ async function wordLoop() {
             currentWord += "";
         }
     }
-    document.getElementById("animated").style.color = originalColor;
+    document.getElementById("animated").style.color = "#ECDFCC";
 }
 
 //deze async functie activeerd een timeout hierbij word meteen een promise returned, de promise word pas opgelost na de timeout

@@ -38,7 +38,7 @@ span.method {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ECDFCC;
+    color: #04ff00;
   }
   .hero-image {
     background-position: center;
@@ -86,4 +86,7 @@ span.method {
 }
 .fa:hover{
     opacity: 0.99;
+}
+#animated {
+  transition: color 1s ease-out;
 }

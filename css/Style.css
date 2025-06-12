@@ -12,7 +12,7 @@ nav {
 .card {
   background-color: transparent;
   color: #ECDFCC;
-  border: 2px solid #697565;
+  border: 2px solid #3C3D37;
   border-top: 0px;
   border-radius: 32px;
   border-top-left-radius: 5px;
@@ -52,7 +52,7 @@ span.method {
 
 .hero-text p {
   size: 70px;
-  color: #ECDFCC;
+  color: #04ff00;
 }
 
 .hero-image {
@@ -109,4 +109,17 @@ span.method {
 
 .fa:hover {
   opacity: 0.99;
+}
+
+
+.card{
+  transition:transform 1s;
+}
+
+.card:hover{
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#animated {
+  transition: color 1s ease-out;
 }
