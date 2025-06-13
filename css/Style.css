@@ -52,7 +52,7 @@ span.method {
 
 .hero-text p {
   size: 70px;
-  color: #04ff00;
+  color: #09c706;
 }
 
 .hero-image {
@@ -118,6 +118,22 @@ span.method {
 
 .card:hover{
   transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.btn{
+  transition:transform 0.5s;
+}
+
+.container{
+  transition:transform 0.5s;
+}
+
+.btn:hover{
+  transform: scale(1.3);
+}
+
+.container:hover{
+  transform: scale(1.07);
 }
 
 #animated {

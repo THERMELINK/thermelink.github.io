@@ -87,6 +87,23 @@ span.method {
 .fa:hover{
     opacity: 0.99;
 }
+
+.btn{
+  transition:transform 0.5s;
+}
+
+.container{
+  transition:transform 0.5s;
+}
+
+.btn:hover{
+  transform: scale(1.3);
+}
+
+.container:hover{
+  transform: scale(1.07);
+}
+
 #animated {
   transition: color 1s ease-out;
 }

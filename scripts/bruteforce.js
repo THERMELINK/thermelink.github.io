@@ -53,7 +53,7 @@ async function wordLoop() {
 
 async function activateTimeOut(seconds) {
     return new Promise(resolve => {
-        if (Math.random() < 0.5) {
+        if (Math.random() < 0.75) {
             resolve();
         }
         else {
