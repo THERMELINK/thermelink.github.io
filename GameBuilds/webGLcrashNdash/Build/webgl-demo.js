@@ -6,7 +6,7 @@ main();
 function main() {
   const canvas = document.querySelector("#gl-canvas");
   // Initialize the GL context
-  const gl = canvas.getContext("webgl");
+  const gl = canvas.getContext("webGLcrashNdash.loader");
 
   // Only continue if WebGL is available and working
   if (gl === null) {
