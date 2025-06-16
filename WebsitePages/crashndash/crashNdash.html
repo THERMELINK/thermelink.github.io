@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<HTML lang="en">
+<html lang="en-us">
 
-<HEAD>
+<head>
   <TITLE>Project Text adventure</TITLE>
-  <script src="../scripts/bruteforce.js" defer></script>
+  <script src="../../scripts/bruteforce.js" defer></script>
   <script src="../GameBuilds/webGLcrashNdash/Build/webgl-demo.js" type="module"></script>
 
 
@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/StyleSub.css">
+  <link rel="stylesheet" href="../../css/StyleSub.css">
 
   <!--linkt social media logo's-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,29 +21,33 @@
   <!--linkt de google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-</HEAD>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">  
+  
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity Web Player | Crash 'n' Dash</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+</head>
 
-<BODY>
-
+<body>
 
   <!--https://colorhunt.co/palette/1e201e3c3d37697565ecdfcc  colorpalette voor website-->
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
     <!-- linker kant eventueel logo toevoegen -->
-    <a class="navbar-brand" href="../index.html">Thom</a>
+    <a class="navbar-brand" href="../../index.html">Thom</a>
     <!-- rechter kant + navbar items -->
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../../index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../WebsitePages/Overmij.html">Wie ben ik</a>
+        <a class="nav-link" href="../../WebsitePages/Overmij.html">Wie ben ik</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../WebsitePages/Ervaring.html">Ervaring</a>
+        <a class="nav-link" href="../../WebsitePages/Ervaring.html">Ervaring</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../WebsitePages/Contact.html">Contact</a>
+        <a class="nav-link" href="../../WebsitePages/Contact.html">Contact</a>
       </li>
     </ul>
   </nav>
@@ -64,10 +68,8 @@
     <div class="titeltext">
       <p>Project<span class="method">.CrashNDash()</span></p>
     </div>
-
-    <p><a href="../GameBuilds/crashndash/crashNdash.html">CSS Tutorial</a></p>
     <div class="col">
-      <img src="../WebsiteImages/crashNdashGame.png" class="card-img-top w-25" alt="...">
+      <img src="../../WebsiteImages/crashNdashGame.png" class="card-img-top w-25" alt="...">
 
       <h4>Party game?</h4>
       <p class="card-text">
@@ -134,13 +136,13 @@
     </p>
   </div>
 
-  <div class="container mt-5 py-3">
+  <div class="container mt-5 py-5">
     <div class="card-deck">
       <div class="row justify-content-center">
 
         <div class="col-sm-3">
           <div class="card h-100">
-            <img class="card-img-top" src="../WebsiteImages/turretGun.png" alt="Card image cap">
+            <img class="card-img-top" src="../../WebsiteImages/turretGun.png" alt="Card image cap">
             <div class="card-footer mt-auto">
               <p class="card-text">turret richt zich op de speler</p>
             </div>
@@ -149,7 +151,7 @@
 
         <div class="col-sm-3">
           <div class="card h-100">
-            <img class="card-img-top" src="../WebsiteImages/bombCar.png" alt="Card image cap">
+            <img class="card-img-top" src="../../WebsiteImages/bombCar.png" alt="Card image cap">
             <div class="card-footer mt-auto">
               <p class="card-text">bom auto rijd naar de speler toe</p>
             </div>
@@ -159,7 +161,7 @@
 
         <div class="col-sm-3">
           <div class="card h-100">
-            <img class="card-img-top" src="../WebsiteImages/turretScript.png" alt="Card image cap">
+            <img class="card-img-top" src="../../WebsiteImages/turretScript.png" alt="Card image cap">
             <div class="card-footer mt-auto">
               <p class="card-text">turret script, om het gedrag van de turret te bepalen</p>
             </div>
@@ -167,8 +169,125 @@
         </div>
       </div>
     </div>
-    <p><a href="../GameBuilds/crashndash/crashNdash.html">test2</a></p>
   </div>
+
+<div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+    <div id="unity-loading-bar">
+      <div id="unity-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+    </div>
+    <div id="unity-warning"> </div>
+    <div id="unity-footer">
+      <div id="unity-logo-title-footer"></div>
+      <div id="unity-fullscreen-button"></div>
+      <div id="unity-build-title">Crash 'n' Dash</div>
+    </div>
+  </div>
+  <script>
+    var canvas = document.querySelector("#unity-canvas");
+
+    // Shows a temporary message banner/ribbon for a few seconds, or
+    // a permanent error message on top of the canvas if type=='error'.
+    // If type=='warning', a yellow highlight color is used.
+    // Modify or remove this function to customize the visually presented
+    // way that non-critical warnings and error messages are presented to the
+    // user.
+    function unityShowBanner(msg, type) {
+      var warningBanner = document.querySelector("#unity-warning");
+      function updateBannerVisibility() {
+        warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+      }
+      var div = document.createElement('div');
+      div.innerHTML = msg;
+      warningBanner.appendChild(div);
+      if (type == 'error') div.style = 'background: red; padding: 10px;';
+      else {
+        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        setTimeout(function () {
+          warningBanner.removeChild(div);
+          updateBannerVisibility();
+        }, 5000);
+      }
+      updateBannerVisibility();
+    }
+
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/crashndash.loader.js";
+    var config = {
+      arguments: [],
+      dataUrl: buildUrl + "/crashndash.data",
+      frameworkUrl: buildUrl + "/crashndash.framework.js",
+      codeUrl: buildUrl + "/crashndash.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "Crash 'n' Dash",
+      productVersion: "1.0",
+      showBanner: unityShowBanner,
+    };
+
+    // By default, Unity keeps WebGL canvas render target size matched with
+    // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+    // Set this to false if you want to decouple this synchronization from
+    // happening inside the engine, and you would instead like to size up
+    // the canvas DOM size and WebGL render target sizes yourself.
+    // config.matchWebGLToCanvasSize = false;
+
+    // If you would like all file writes inside Unity Application.persistentDataPath
+    // directory to automatically persist so that the contents are remembered when
+    // the user revisits the site the next time, uncomment the following line:
+    // config.autoSyncPersistentDataPath = true;
+    // This autosyncing is currently not the default behavior to avoid regressing
+    // existing user projects that might rely on the earlier manual
+    // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+    // expected to change.
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      // Mobile device style: fill the whole browser client area with the game canvas:
+
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.getElementsByTagName('head')[0].appendChild(meta);
+      document.querySelector("#unity-container").className = "unity-mobile";
+      canvas.className = "unity-mobile";
+
+      // To lower canvas resolution on mobile devices to gain some
+      // performance, uncomment the following line:
+      // config.devicePixelRatio = 1;
+
+
+    } else {
+      // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+      canvas.style.width = "960px";
+      canvas.style.height = "600px";
+    }
+
+    document.querySelector("#unity-loading-bar").style.display = "block";
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
+      }).then((unityInstance) => {
+        document.querySelector("#unity-loading-bar").style.display = "none";
+        document.querySelector("#unity-fullscreen-button").onclick = () => {
+          unityInstance.SetFullscreen(1);
+        };
+
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+
+    document.body.appendChild(script);
+
+  </script>
+
+
 
 
   <div class="footer">
@@ -189,6 +308,6 @@
       </div>
     </div>
   </div>
-</BODY>
+</body>
 
-</HTML>
+</html>
