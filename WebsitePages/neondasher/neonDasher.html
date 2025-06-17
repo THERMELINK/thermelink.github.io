@@ -24,9 +24,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
 
   <!--https://colorhunt.co/palette/1e201e3c3d37697565ecdfcc  colorpalette voor website-->
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
@@ -135,10 +137,21 @@
     </div>
   </div>
 
-<!-
 
- <div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width=3040px height=1440px tabindex="-1"></canvas>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" width=750 height=1450 tabindex="-1"></canvas>
     <div id="unity-loading-bar">
       <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
@@ -152,6 +165,7 @@
       <div id="unity-build-title">NeonDasher</div>
     </div>
   </div>
+
 
   <div class="footer">
     <div class="d-flex justify-content-evenly border-top py-3 my-3">
@@ -171,6 +185,7 @@
       </div>
     </div>
   </div>
+
 
   <script>
 
@@ -206,11 +221,11 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/neondasher.loader.js";
+    var loaderUrl = buildUrl + "/testdasher.loader.js";
     var config = {
-      dataUrl: buildUrl + "/neondasher.data",
-      frameworkUrl: buildUrl + "/neondasher.framework.js",
-      codeUrl: buildUrl + "/neondasher.wasm",
+      dataUrl: buildUrl + "/testdasher.data",
+      frameworkUrl: buildUrl + "/testdasher.framework.js",
+      codeUrl: buildUrl + "/testdasher.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "A4 studios",
       productName: "NeonDasher",
@@ -243,8 +258,8 @@
     } else {
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-      canvas.style.width = "960px";
-      canvas.style.height = "600px";
+      canvas.style.width = "750px";
+      canvas.style.height = "1450px";
     }
 
     loadingBar.style.display = "block";
