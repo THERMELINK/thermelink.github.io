@@ -128,9 +128,9 @@ span.method {
 
 
    /*animation from: https://stackoverflow.com/questions/23441060/how-to-animate-gradients-using-css */
-  background: linear-gradient(130deg, #007BFF, #013874, #007BFF);
+  background: linear-gradient(130deg, #007BFF, #58a8fd, #007BFF,#007BFF);
   background-size: 200% 200%;
-  animation: Animation 7s ease infinite;
+  animation: Animation 5s  infinite;
 }
 
 
