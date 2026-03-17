@@ -25,8 +25,11 @@ nav {
 }
 
 .container {
-  background: linear-gradient(to bottom right, rgba(30, 32, 30, 0.30) 60%, rgba(236, 223, 204, 0.20));
-  border-radius: 20px;
+  border-radius: 5px;
+}
+
+.col-md-8 .box {
+  height: 100%;
 }
 
 .carousel-item>img {
@@ -53,7 +56,32 @@ span.method {
 
 .hero-text p {
   size: 70px;
-  color: #09c706;
+  color: #ECDFCC;
+}
+
+.introText{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.col-5{
+  background-image: linear-gradient(to right,#2e2e2bd1,#25252553);
+}
+
+.hero-text .Introduction{
+  font-size: 80px;
+  color: #ECDFCC;
+  align-items: center;
+}
+.hero-text .row .col{
+  align-items:center;
+  justify-content:center;
+}
+
+.ExtraItems .item1 .col img{
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .hero-image {
@@ -63,11 +91,21 @@ span.method {
 }
 
 .hero-image .heroImage {
+  background-image: linear-gradient(to right, rgba(49, 49, 49, 0.516), rgba(4, 4, 4, 0.856)), url(../WebsiteImages/MeneerHermelink.jpg);
+  background-size: cover;
+  height: 45rem;
+  background-position:bottom;
+  border-radius: 5px;
+  border: #1f2328;
+}
+
+.hero-image .headerImage {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.201), rgba(30, 32, 30, 0.999)), url(../WebsiteImages/ScriptScreenshotStretched.png);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 200px;
+  animation: MovingBackgroundImage 20s linear forwards infinite;
 }
 
 .fa {
@@ -114,7 +152,7 @@ span.method {
 
 
 .card {
-  transition: transform 0.3s;
+  transition: transform 0.1s;
 }
 
 .card:hover {
@@ -122,15 +160,15 @@ span.method {
 }
 
 .btn {
-  transition: transform 0.3s;
+  transition: transform 0.1s;
   transform: scale(0.9);
-   color: white;
+  color: white;
 
 
-   /*animation from: https://stackoverflow.com/questions/23441060/how-to-animate-gradients-using-css */
-  background: linear-gradient(130deg, #007BFF, #58a8fd, #007BFF,#007BFF);
+  /*animation from: https://stackoverflow.com/questions/23441060/how-to-animate-gradients-using-css */
+  background: linear-gradient(130deg, #007BFF, #58a8fd, #007BFF, #007BFF);
   background-size: 200% 200%;
-  animation: Animation 5s  infinite;
+  animation: Animation 5s infinite;
 }
 
 
@@ -139,12 +177,8 @@ span.method {
   transform: scale(0.9);
 }
 
-.btn:hover {
-  transform: scale(1.3);
-}
-
-.container:hover {
-  transform: scale(1);
+.col img:hover {
+  transform: scale(1.1);
 }
 
 #animated {
@@ -163,5 +197,17 @@ span.method {
 
   100% {
     background-position: 10% 0%
+  }
+}
+
+
+
+@keyframes MovingBackgroundImage {
+  from {
+    background-position: center top;
+  }
+
+  to {
+    background-position: center bottom;
   }
 }
