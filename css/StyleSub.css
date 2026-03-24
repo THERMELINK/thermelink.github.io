@@ -61,6 +61,14 @@ span.method {
   height: 300px;
 }
 
+.container .d-inline img{
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .fa {
   padding: 10px;
   font-size: 20px;
